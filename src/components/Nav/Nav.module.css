@@ -1,0 +1,119 @@
+.navPc {
+  height: 100%;
+  width: 278px;
+  padding: 0 0 0 28px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.navPhone {
+  height: 90%;
+  width: 100%;
+  padding: 0 28px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-right: 2px solid black;
+}
+.navPhone .list li {
+  max-width: 100%;
+  padding: 11px;
+  text-align: center;
+}
+.navTouch {
+  display: none;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  margin-bottom: 63px;
+}
+.logo div {
+  display: inline-block;
+}
+.logo span {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.01em;
+  color: #838383;
+}
+.list {
+  line-height: 21px;
+  font-weight: 500;
+  height: 900px;
+}
+.list a {
+  color: #9197b3;
+  display: flex;
+  align-items: center;
+}
+.list li {
+  padding: 11px;
+}
+.list li a div {
+  margin-left: 14px;
+  flex: 1 1 auto;
+  transition: all 0.5s;
+}
+.list li:hover a div {
+  margin-left: 5px;
+}
+.list li:nth-child(3) {
+  background: #5932ea;
+  border-radius: 8px;
+}
+.list li:nth-child(3) a {
+  color: white;
+}
+.profile {
+  display: flex;
+  max-width: 100%;
+}
+.profile img {
+  margin-right: 12px;
+}
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (max-width: 900px) {
+  .navPc {
+    display: none;
+  }
+  .navTouch {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .navTouch img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+  .list {
+    line-height: 21px;
+    font-weight: 500;
+    flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 990px) {
+  .navPc {
+    width: 188px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .navPc {
+    padding: 0 0 0 10px;
+  }
+}
